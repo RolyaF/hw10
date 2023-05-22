@@ -273,4 +273,14 @@ public class RadioTest {
         int expected = 0;
         Assertions.assertEquals(actual, expected);
     }
+    @Test
+    public void testNew() {
+        Radio radio = new Radio(20);
+        radio.setCurrentStation(18);
+        int actual = radio.getCurrentStation();
+        int expected = 18;
+        Assertions.assertEquals(actual, expected);
+
+    }
+
 }
